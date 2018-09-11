@@ -1,0 +1,111 @@
+<div [class]='"bg_pipeline_img "+statusClass'>
+    <div class="bg_pipeline_left"></div>
+    <div class="bg_pipeline_right"></div>
+    <div class="bg_pipeline_caption">Analyze</div>
+</div>
+
+
+
+<!-- <div [class]="'box '+status.classList" *ngFor="let expected of status.lifetimes_calculated">
+    <div class="heading">
+        <h2>Predicted Lifetime:</h2>
+    </div>
+    <div class="body" *ngIf="status.classList.indexOf('-na')!==-1">
+        <div>
+            <div class="icon-ui_alert"></div>
+        </div>
+        <div>
+            <h2>Not enough data</h2>
+            <div class="error">
+                <div>
+                    &#8226; Please enter more measurements, as many as possible for the most accurate calculation
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+
+<div [class]="'box '+statusClass">
+<div class="heading">
+    <h2><span *ngIf="status.lifetime_calculatedWorst">Best Case </span><span *ngIf="!status.lifetime_calculatedWorst">Predicted </span>Lifetime:</h2>
+</div>
+
+<!-- problems -->
+<div class="body">
+
+    <!-- <div class="bestWorstCase" *ngIf="status.lifetime_calculatedWorst">
+        Best case scenario:
+    </div> -->
+    <h2>
+        <span [class]='"icon-ui_"+(status.lifetime_calculated===status.lifetime_manufacturer ? "check" : "alert")'></span>
+        <span> {{status.lifetime_calculated}} years</span>
+    </h2>
+    <div class="progress_indicator_bar">
+        <span class="part" [style.width]="(status.lifetime_calculated / status.lifetime_manufacturer) * 100 +'%'"></span>
+        <span class="rest"></span>
+    </div>
+
+    <div class="bar_container">
+        <div class="bar">
+            <div class="bar_shaded"></div>
+        </div>
+        <div class="bar_caption">
+            based on manufacturer's expected lifetime of
+            <span class="backend_val" style="white-space:nowrap;">{{status.lifetime_manufacturer}} years</span>, and a probability of certainty of
+            <span class="backend_val" style="">{{status.lifetime_calculatedProb}}%</span>
+        </div>
+    </div>
+    <div>&nbsp;</div>
+    <!-- <h3>Details:</h3>
+    <ul>
+        <li *ngFor="let problem of status.problems">{{problem}} </li>
+    </ul> -->
+
+</div>
+</div>
+<div [class]="'box next '+status.classList" *ngIf="status.lifetime_calculatedWorst">
+    <div class="heading">
+        <h2>Worst Case Lifetime:</h2>
+    </div>
+
+    <!-- problems -->
+    <div class="body">
+
+        <!-- <div class="bestWorstCase">
+            Worst case scenario:
+        </div> -->
+        <h2>
+            <span [class]='"icon-ui_"+(status.lifetime_calculatedWorst===status.lifetime_manufacturer ? "check" : "alert")'></span>
+            <span> {{status.lifetime_calculatedWorst}} years</span>
+        </h2>
+        <div class="progress_indicator_bar">
+            <span class="part" [style.width]="(status.lifetime_calculatedWorst / status.lifetime_manufacturer) * 100 +'%'"></span>
+            <span class="rest"></span>
+        </div>
+
+        <div class="bar_container">
+            <div class="bar">
+                <div class="bar_shaded"></div>
+            </div>
+            <div class="bar_caption">
+                based on manufacturer's expected lifetime of
+                <span class="backend_val" style="white-space:nowrap;">{{status.lifetime_manufacturer}} years</span>, and a probability of certainty of
+                <span class="backend_val" style="">{{status.lifetime_calculatedWorstProb}}%</span>
+            </div>
+        </div>
+        <div>&nbsp;</div>
+        <!-- <h3>Details:</h3>
+        <ul>
+            <li *ngFor="let problem of status.problems">{{problem}} </li>
+        </ul> -->
+
+    </div>
+    <!-- 
+    fluid parameters
+    
+    gallons per thousand barrels
+    
+    * salt types ? mono divalents etc...
+     -->

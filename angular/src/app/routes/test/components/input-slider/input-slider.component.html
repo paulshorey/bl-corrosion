@@ -1,0 +1,59 @@
+
+<div class="mymat-slider-label">
+    <label>
+        <b>{{substance.name}}</b> ({{substance.unit}})
+    </label>
+</div>
+
+<div [class]="'mymat-slider-fieldset '+addClass" ng-if="substance">
+    <div class="mymat-slider-input">
+        <input type="number" [step]="substance.step" [min]="substance.na" [max]="substance.max" [value]="substance.value" (change)="sliderValueChange($event)"
+        />
+    </div>
+    <div class="mymat-slider-slider">
+
+        <mat-slider vertical thumbLabel [step]="substance.step" [min]="substance.na" [max]="substance.max" [value]="substance.value===null ? substance.na : substance.value"
+            (input)="sliderInputChange($event)" (change)="sliderValueChange($event)"></mat-slider>
+
+        <div class="mymat-slider-ticks left">
+            <div class="t tMax" *ngIf="substance.statusAlert" (click)="sliderStatusSet('alert')">
+                <i>&nbsp;</i>
+                <span class="icon-ui_alert"></span>
+            </div>
+            <div class="t tBad" *ngIf="substance.badAtStyle" (click)="sliderStatusSet('bad')" [style]="substance.badAtStyle">
+                <i>&nbsp;</i>
+                <span class="icon-ui_alert"></span>
+            </div>
+            <div class="t tDanger" *ngIf="substance.dangerAtStyle" (click)="sliderStatusSet('danger')" [style]="substance.dangerAtStyle">
+                <i>&nbsp;</i>
+                <span class="icon-ui_alert"></span>
+            </div>
+            <div class="t tOk" [style]="this.substance.zeroAtStyle" (click)="sliderStatusSet('ok')">
+                <i>&nbsp;</i>
+                <span class="icon-ui_check"></span>
+            </div>
+            <!-- <div class="t tNa">
+                <span class="">N/A</span>
+            </div> -->
+        </div>
+
+        <div class="mymat-slider-ticks right">
+            <div class="t">
+                &#8805; {{substance.max}}
+            </div>
+            <div class="t tBadRight" [style]="substance.badAtStyle">
+                {{substance.statusBad}}
+            </div>
+            <div class="t" [style]="substance.dangerAtStyle">
+                {{substance.statusDanger}}
+            </div>
+            <div class="t" [style]="this.substance.zeroAtStyle">
+                <span *ngIf="substance.statusOk>0">&#8804; </span>{{substance.min}}
+            </div>
+            <div class="t tNa">
+                N/A
+            </div>
+        </div>
+
+    </div>
+</div>

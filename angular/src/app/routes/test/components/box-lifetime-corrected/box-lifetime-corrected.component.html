@@ -1,0 +1,43 @@
+<div class="bg_pipeline_img">
+    <div class="bg_pipeline_left"></div>
+    <div class="bg_pipeline_right"></div>
+    <div class="bg_pipeline_caption">Output</div>
+</div>
+
+<div [class]="'box '+statusClass">
+    <div class="heading">
+        <h2>{{status.correction_corrosionInhibitor.add ? "Corrected" : "Predicted"}} Lifetime:</h2>
+    </div>
+
+    <div class="body">
+        <h2>
+            <span [class]='"icon-ui_"+(status.lifetime_corrected===status.lifetime_manufacturer ? "check" : "alert")'></span>
+            <span> {{status.lifetime_corrected}} years</span>
+        </h2>
+        <div class="progress_indicator_bar">
+            <span class="part" [style.width]="(status.lifetime_corrected / status.lifetime_manufacturer) * 100 +'%'"></span>
+            <span class="rest"></span>
+        </div>
+
+        <div class="bar_container">
+            <div class="bar">
+                <div class="bar_shaded"></div>
+            </div>
+            <div class="bar_caption">
+                based on manufacturer's expected lifetime of
+                <span class="backend_val" style="white-space:nowrap;">{{status.lifetime_manufacturer}} years</span>, and a probability of certainty of
+                <span class="backend_val" style="">{{status.lifetime_correctedProb}}%</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom"></div>
+
+</div>
+<!-- 
+fluid parameters
+
+gallons per thousand barrels
+
+* salt types ? mono divalents etc...
+ -->

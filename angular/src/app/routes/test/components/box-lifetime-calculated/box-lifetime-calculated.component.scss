@@ -1,0 +1,143 @@
+[box-lifetime-calculated] {
+	z-index: 104;
+	.status-ok & {
+		display: none;
+	}
+	.status-bad & {
+		visibility: visible !important;
+		opacity: 1 !important;
+	}
+	transition: opacity 0.5s linear 0s;
+	.box {
+		z-index: 200;
+	}
+	.bg_pipeline_img {
+		background-image: url("/assets/images/bg/lifetime_center.png");
+		.bg_pipeline_right {
+			background-image: url("/assets/images/bg/lifetime_right.png");
+		}
+		.bg_pipeline_left {
+			background-image: url("/assets/images/bg/lifetime_left.png");
+		}
+		&.status-ok {
+			background-image: url("/assets/images/bg/corrected_center.png");
+			.bg_pipeline_right {
+				background-image: url("/assets/images/bg/corrected_right.png");
+			}
+			.bg_pipeline_left {
+				background-image: url("/assets/images/bg/corrected_left.png");
+			}
+		}
+		&.no-correction {
+			background-size: 18% 100%;
+			background-position: left;
+			.bg_pipeline_left {
+				display: none;
+			}
+		}
+	}
+}
+[box-lifetime-corrected] {
+	z-index: 102;
+	.status-ok &,
+	.status-bad & {
+		visibility: visible !important;
+		opacity: 1 !important;
+	}
+	transition: opacity 0.5s linear 0.3s;
+	.box {
+		min-height: 250px !important;
+		z-index: 200;
+		.heading {
+			&::before {
+				display: none;
+			}
+		}
+	}
+	.bg_pipeline_img {
+		visibility: hidden;
+		opacity: 0;
+		background-image: url("/assets/images/bg/corrected_center.png");
+		.bg_pipeline_right {
+			background-image: url("/assets/images/bg/corrected_right.png");
+		}
+		.bg_pipeline_left {
+			&::before {
+				background: #88dd00;
+			}
+		}
+		.bg_pipeline_caption {
+			// color: #88dd00;
+		}
+	}
+}
+[box-lifetime-calculated],
+[box-lifetime-corrected] {
+	/*
+		self status
+	*/
+	.box.status-bad {
+		border-color: #d45c62;
+		.progress_indicator_bar {
+			border-color: #d45c62;
+			.part {
+				background: #d45c62;
+			}
+		}
+		.heading {
+			background: #d45c62;
+		}
+		.body {
+			h2,
+			h3 {
+				color: #d45c62;
+			}
+			.bestWorstCase {
+				// color: #111;
+				font-size: 1.5rem;
+			}
+		}
+		.bottom {
+			&::after {
+				background: #d45c62;
+			}
+		}
+		.backend_val {
+			color: #d45c62;
+		}
+	}
+	.box.status-ok {
+		border-color: #88dd00;
+		.progress_indicator_bar {
+			border-color: #88dd00;
+			.part {
+				background: #88dd00;
+			}
+		}
+		.heading {
+			background: #88dd00;
+		}
+		.body {
+			h2,
+			h3 {
+				color: #88dd00;
+			}
+		}
+		.bottom {
+			&::after {
+				background: #88dd00;
+			}
+		}
+		.backend_val {
+			color: #88dd00;
+		}
+	}
+	/*
+		etc
+	*/
+	.box {
+		.backend_val {
+			font-weight: bold;
+		}
+	}
+}

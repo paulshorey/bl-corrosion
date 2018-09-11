@@ -1,0 +1,6 @@
+<Features>
+  <Feature_Value Name='H2O' ID='1' Group_ID='1' Time='0' Conf='1.0' Value='0.2'/>
+  <Feature_Value Name='Salt' ID='2' Group_ID='2' Time='0' Conf='1.0' Value='300'/>
+  <Feature_Value Name='Temperature' ID='3' Group_ID='3' Time='0' Conf='1.0' Value='280'/>
+  <Feature_Value Name='H2S' ID='4' Group_ID='4' Time='0' Conf='1.0' Value='0.2'/>
+</Features>

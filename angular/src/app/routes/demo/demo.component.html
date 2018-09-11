@@ -1,0 +1,31 @@
+<div id="demo_fullscreen">
+<header>
+    <span>Demo / Proof of concept</span>
+    <img src="/assets/images/logo/Beyond_Limits_Logo_WHITE_RGB_700x40.svg" />
+</header>
+<!-- <h2 id="demo_banner">Demo / Proof of concept</h2> -->
+<article>
+    <h1 style="padding: 0 1.66rem;color: #52b9f0;">Oil Pipeline Corrosion Calculator</h1>
+    <div id="pipeline" [class]="'box-components '+statusClass">
+
+        <span *ngIf="statusClass.indexOf('show-results')!==-1" id="scroll-left" class="scroll left" onclick="window.scroll({left: 0,behavior: 'smooth'});">
+            <span>
+                <b>&laquo;</b>
+                <span> Scroll Left </span>
+            </span>
+        </span>
+        <span *ngIf="statusClass.indexOf('show-results')!==-1" id="scroll-right" class="scroll right" onclick="window.scroll({left: 2000,behavior: 'smooth'});">
+            <span>
+                <span> Scroll Right </span>
+                <b>&raquo;</b>
+            </span>
+        </span>
+
+        <div box-measure></div>
+        <div box-lifetime-calculated></div>
+        <div box-correction *ngIf="status.correction_corrosionInhibitor.add"></div>
+        <div box-lifetime-corrected *ngIf="status.correction_corrosionInhibitor.add || status.classList.indexOf('-ok')!=-1"></div>
+
+    </div>
+</article>
+</div>

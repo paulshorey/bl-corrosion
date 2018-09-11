@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="assets/css/all.css" />
+    <!-- <script src="model/window.store.js"></script> -->
+</head>
+
+<body>
+    <div id="ui">
+        <div id="ui-stage" class="status-">
+            <div id="ui-background">
+            </div>
+            <div id="ui-top">
+                <div id="box-lifetime" class="box">
+                    <div class="heading">
+                        <h2>Expected Lifetime</h2>
+                    </div>
+
+                    <div class="content if-status-ok">
+                        <p>
+                            Your pipeline is healthy. Good job!
+                        </p>
+                    </div>
+
+                    <div class="content if-status-">
+                        <p>
+                            Please enter at least the
+                            <b>H20</b> and
+                            <b>Temp.</b> measurements.
+                        </p>
+                    </div>
+
+                    <div class="content if-status-h2s">
+                        <p>
+                            Too much
+                            <b>H2S</b>!
+                        </p>
+                    </div>
+
+                    <div class="content if-status-temp">
+                        <p>
+                            <b>Temperature</b> too high!
+                        </p>
+                    </div>
+
+                    <div class="content if-status-salt">
+                        <p>
+                            Too much
+                            <b>salt</b>!
+                        </p>
+                    </div>
+
+                </div>
+
+                <div id="box-measure" class="box">
+                    <div class="heading">
+                        <h2>1. Measure</h2>
+                    </div>
+                    <div class="content sliders verticals">
+
+                        <!-- <input-slider vertical *ngFor="let substance of generateArray(measurements)" [substance]="substance" (substanceChange)="substanceChange($event)"
+                            [ngStyle]="inputSliderNgStyle"></input-slider> -->
+
+                    </div>
+                </div>
+
+                <div id="box-lifetime-corrected" class="box">
+                    <div class="heading">
+                        <h2>3. Corrected Lifetime</h2>
+                    </div>
+                    <div class="content">
+                        <p>
+                            box-lifetime-corrected
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div id="ui-bottom">
+                <div id="box-correction" class="box">
+                    <div class="heading">
+                        <h2>2. Apply Correction</h2>
+                    </div>
+                    <div class="content">
+                        <p>
+                            box-correction
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+</html>

@@ -1,0 +1,61 @@
+<div class="bg_pipeline_img">
+    <div class="bg_pipeline_left"></div>
+    <div class="bg_pipeline_right"></div>
+    <!-- <div class="bg_pipeline_caption left">3.</div> -->
+    <div class="bg_pipeline_caption">Correct</div>
+</div>
+
+<div [class]="'box '+status.classList">
+    <div class="heading"> 
+        <h2>Recommendation:
+            <a name="box-correction"></a>
+        </h2>
+    </div>
+
+
+
+    <!-- something wrong -->
+    <div class="body" *ngIf="status.classList.indexOf('-ok')===-1">
+        <h2>Add
+            <b>{{status.correction_corrosionInhibitor.add}} gallons of corrosion inhibitor per barrel</b>
+        </h2>
+        <div>
+            
+        </div>
+
+        <div class="content-box content-box-error" *ngIf="status.classList.indexOf('-ok')===-1 && status.classList.indexOf('-na')===-1">
+
+            <div class="content">
+                <h3>Correction cost:</h3>
+                <div class="fieldset">
+                    <span class="label">Cost per gallon of inhibitor: </span>
+                    <b>$</b>
+                    <input type="number" [value]="status.correction_corrosionInhibitor.constraintPerUnit" [placeholder]="status.correction_corrosionInhibitor.constraintPerUnit"
+                        (change)="set_status_correction_corrosionInhibitor('constraintPerUnit',$event.target.value)" />
+                </div>
+                <div class="fieldset">
+                    <span class="label">Cost to correct each <b>{{status.crude_bblhr}} bbl / hr</b>:</span>
+                    <b>$ {{status.correction_corrosionInhibitor.constraintPerUnit * status.crude_bblhr}}</b>
+                    <!-- <input type="number" [value]="status.correction_corrosionInhibitor.constraintUpperLimit" [placeholder]="status.correction_corrosionInhibitor.constraintUpperLimit"
+                        (change)="set_status_correction_corrosionInhibitor('constraintUpperLimit',$event.target.value)" /> -->
+                </div>
+                <div class="fieldset">
+                    <h3 (click)="calculate_corrosionInhibitor($event);">
+                        <span class="icon-ui_cycle"></span><span> Update</span>
+                    </h3>
+                </div>
+            </div>
+
+            <!-- <div class="content-bottom">
+                <button value="calculate" onClick="document.getElementById('calculate_measurements_button').focus();document.getElementById('calculate_measurements_button').click();setTimeout(function(){document.getElementById('calculate_measurements_button').blur();},500);">
+                    <span class="icon-ui_cycle"></span>
+                    <span> Update</span>
+                </button>
+            </div> -->
+        </div>
+
+    </div>
+
+    <div class="bottom"></div>
+
+</div>

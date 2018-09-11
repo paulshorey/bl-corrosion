@@ -1,0 +1,146 @@
+<div class="bg_pipeline_img">
+    <div class="bg_pipeline_left"></div>
+    <div class="bg_pipeline_right"></div>
+    <!-- <div class="bg_pipeline_caption left">1.</div> -->
+    <div class="bg_pipeline_caption">Measure</div>
+</div>
+
+<div [class]="'box '+status.classList">
+    <div class="heading">
+        <h2>Fluid Parameters:</h2>
+    </div>
+    <div class="body crude_measurements">
+
+        <div class="crude_type">
+            <label>
+                <b>Crude types:</b>
+                <!--  (%) -->
+            </label>
+            <div class="crude_groups">
+
+                <div class="crude_group" style="background:#F3F3F3;border-color:rgba(0,0,0,0.175);">
+                    <div class="th">Grade A
+                        <b>(bbl
+                            <i>/</i>hr)</b>
+                    </div>
+                    <div class="td">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="inputs">
+                        <span class="crude_abc_input">
+                            <input type="number" min="0" max="1000000" [value]="measurements.crude_a.value" (change)="crude_change('crude_a',$event)" />
+                        </span>
+                    </div>
+                    <div class="crude_abc_info">
+                        <span class="icon-ui_info"></span>
+                        <div class="expanded_info">
+                            <ul>
+                                <li><b>h2s:</b> 0.50 <i>%</i></li>
+                                <li><b>salt:</b> 400 <i>ppm</i></li>
+                                <li><b>price:</b> 70 <i>$/bbl</i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="crude_group" style="background:#E6E6E6;border-color:rgba(0,0,0,0.350);">
+                    <div class="th">Grade B
+                        <b>(bbl
+                            <i>/</i>hr)</b>
+                    </div>
+                    <div class="td">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="inputs">
+                        <span class="crude_abc_input">
+                            <input type="number" min="0" max="1000000" [value]="measurements.crude_b.value" (change)="crude_change('crude_b',$event)" />
+                        </span>
+                    </div>
+                    <div class="crude_abc_info">
+                        <span class="icon-ui_info"></span>
+                        <div class="expanded_info">
+                            <ul>
+                                <li><b>h2s:</b> 2 <i>%</i></li>
+                                <li><b>salt:</b> 1200 <i>ppm</i></li>
+                                <li><b>price:</b> 60 <i>$/bbl</i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="crude_group" style="background:#D8D8D8;border-color:rgba(0,0,0,0.525);">
+                    <div class="th">Grade C
+                        <b>(bbl
+                            <i>/</i>hr)</b>
+                    </div>
+                    <div class="td">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="inputs">
+                        <span class="crude_abc_input">
+                            <input type="number" min="0" max="1000000" [value]="measurements.crude_c.value" (change)="crude_change('crude_c',$event)" />
+                        </span>
+                    </div>
+                    <div class="crude_abc_info">
+                        <span class="icon-ui_info"></span>
+                        <div class="expanded_info">
+                            <ul>
+                                <li><b>h2s:</b> 1.2 <i>%</i></li>
+                                <li><b>salt:</b> 100 <i>ppm</i></li>
+                                <li><b>price:</b> 65 <i>$/bbl</i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- <div [class]="'crude_sliders _'+substance.id" *ngFor="let substance of generateArray(measurements)"> -->
+            <div class="crude_sliders _h2o">
+                <input-slider class="slider" vertical [substance]="measurements.h2o" (substanceChange)="substanceChange($event)"></input-slider>
+            </div>
+            <div class="crude_sliders _temperature">
+                <input-slider class="slider" vertical [substance]="measurements.temperature" (substanceChange)="substanceChange($event)"></input-slider>
+            </div>
+        <!-- </div> -->
+
+    </div>
+
+    <div class="bottom">
+        <div class="bottom-more-options">
+            <div class="bottom-more-options-content">
+                <p>
+                    When you choose Grade A/B/C flow rates above, we will automatically calculate the h2s and salt content of the total volume. To disable this functionality, click the checkboxes below:
+                </p>
+                <fieldset>
+                    <input type="checkbox" (change)="measurements.omit_toggle('h2s')" [value]="measurements.omit_h2s" /> omit h2s measurement
+                </fieldset>
+                <fieldset>
+                    <input type="checkbox" (change)="measurements.omit_toggle('salt')" [value]="measurements.omit_salt" /> omit salt measurement
+                </fieldset>
+            </div>
+        </div>
+        <span class="left_info_link">
+            <div style="margin-left:2.5px;color:#999;">
+                <b style="position: relative;top: -0.125rem;" class="if_active" onClick="console.log(this.closest('.bottom').classList.remove('active'));setTimeout(function(){window.scroll({ top: 0, left: 0, behavior: 'smooth' });},500);">
+                    <span style="font-size:66%;padding:0 5px 0 0;">&#9650;</span><span style="font-weight:500;">hide options...</span>
+                </b>
+            </div>
+            <div><b>⬆ Approx. flow rates</b></div>
+            <div style="margin-left:2.5px;color:#999;">
+                <b class="if_not_active" onClick="console.log(this.closest('.bottom').classList.add('active'));setTimeout(function(){window.scroll({ top: 1010, left: 0, behavior: 'smooth' });},500);">
+                    <span style="font-size:66%;padding:0 5px 0 0;">&#9660;</span><span style="font-weight:500;">more options...</span>
+                </b>
+            </div>
+        </span>
+        <button value="calculate" (click)="calculate_measurements();" onMouseUp="setTimeout(function(){document.getElementById('calculate_measurements_button').blur();},500);"
+            id="calculate_measurements_button">
+            <span class="icon-ui_cycle"></span>
+            <span> Calculate</span>
+        </button>
+    </div>
+</div>
