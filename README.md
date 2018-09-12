@@ -23,4 +23,6 @@ This is a simple one page app - to calculate corrosion, and give a nice visual r
 ## Instructions
 
 To run project, just start the python server: `cd ./server; python server.py` and open the browser to `http://localhost:5000`.  
-Then, click the `calculate` button in the app, to send the POST request to the `server.py`
+Then, click the `calculate` button in the app, to send the POST request to the `server.py`  
+
+ACTUALLY, to develop it, just do `ng serve`, which will run it on `localhost:4200`, and try to connect to the backend server at the IP ADDRESS specified in the angular service, in `angular/src/services/corrosion.service.ts`.
