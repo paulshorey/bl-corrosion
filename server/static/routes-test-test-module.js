@@ -1,8 +1,8 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["routes-demo-demo-module"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["routes-test-test-module"],{
 
-/***/ "./src/app/routes/demo/components/box-correction/box-correction.component.html":
+/***/ "./src/app/routes/test/components/box-correction/box-correction.component.html":
 /*!*************************************************************************************!*\
-  !*** ./src/app/routes/demo/components/box-correction/box-correction.component.html ***!
+  !*** ./src/app/routes/test/components/box-correction/box-correction.component.html ***!
   \*************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
@@ -11,9 +11,9 @@ module.exports = "<div class=\"bg_pipeline_img\">\n    <div class=\"bg_pipeline_
 
 /***/ }),
 
-/***/ "./src/app/routes/demo/components/box-correction/box-correction.component.scss":
+/***/ "./src/app/routes/test/components/box-correction/box-correction.component.scss":
 /*!*************************************************************************************!*\
-  !*** ./src/app/routes/demo/components/box-correction/box-correction.component.scss ***!
+  !*** ./src/app/routes/test/components/box-correction/box-correction.component.scss ***!
   \*************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
@@ -22,9 +22,9 @@ module.exports = "[box-correction] {\n  z-index: 103;\n  transition: opacity 0.5
 
 /***/ }),
 
-/***/ "./src/app/routes/demo/components/box-correction/box-correction.component.ts":
+/***/ "./src/app/routes/test/components/box-correction/box-correction.component.ts":
 /*!***********************************************************************************!*\
-  !*** ./src/app/routes/demo/components/box-correction/box-correction.component.ts ***!
+  !*** ./src/app/routes/test/components/box-correction/box-correction.component.ts ***!
   \***********************************************************************************/
 /*! exports provided: BoxCorrectionComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -73,8 +73,8 @@ var BoxCorrectionComponent = /** @class */ (function () {
     BoxCorrectionComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: "[box-correction]",
-            template: __webpack_require__(/*! ./box-correction.component.html */ "./src/app/routes/demo/components/box-correction/box-correction.component.html"),
-            styles: [__webpack_require__(/*! ./box-correction.component.scss */ "./src/app/routes/demo/components/box-correction/box-correction.component.scss")],
+            template: __webpack_require__(/*! ./box-correction.component.html */ "./src/app/routes/test/components/box-correction/box-correction.component.html"),
+            styles: [__webpack_require__(/*! ./box-correction.component.scss */ "./src/app/routes/test/components/box-correction/box-correction.component.scss")],
             encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewEncapsulation"].None
         }),
         __metadata("design:paramtypes", [src_app_services_corrosion_service__WEBPACK_IMPORTED_MODULE_1__["CorrosionService"]])
@@ -86,9 +86,9 @@ var BoxCorrectionComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/routes/demo/components/box-lifetime-calculated/box-lifetime-calculated.component.html":
+/***/ "./src/app/routes/test/components/box-lifetime-calculated/box-lifetime-calculated.component.html":
 /*!*******************************************************************************************************!*\
-  !*** ./src/app/routes/demo/components/box-lifetime-calculated/box-lifetime-calculated.component.html ***!
+  !*** ./src/app/routes/test/components/box-lifetime-calculated/box-lifetime-calculated.component.html ***!
   \*******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
@@ -97,9 +97,9 @@ module.exports = "<div [class]='\"bg_pipeline_img \"+statusClass'>\n    <div cla
 
 /***/ }),
 
-/***/ "./src/app/routes/demo/components/box-lifetime-calculated/box-lifetime-calculated.component.scss":
+/***/ "./src/app/routes/test/components/box-lifetime-calculated/box-lifetime-calculated.component.scss":
 /*!*******************************************************************************************************!*\
-  !*** ./src/app/routes/demo/components/box-lifetime-calculated/box-lifetime-calculated.component.scss ***!
+  !*** ./src/app/routes/test/components/box-lifetime-calculated/box-lifetime-calculated.component.scss ***!
   \*******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
@@ -108,9 +108,9 @@ module.exports = "[box-lifetime-calculated] {\n  z-index: 104;\n  transition: op
 
 /***/ }),
 
-/***/ "./src/app/routes/demo/components/box-lifetime-calculated/box-lifetime-calculated.component.ts":
+/***/ "./src/app/routes/test/components/box-lifetime-calculated/box-lifetime-calculated.component.ts":
 /*!*****************************************************************************************************!*\
-  !*** ./src/app/routes/demo/components/box-lifetime-calculated/box-lifetime-calculated.component.ts ***!
+  !*** ./src/app/routes/test/components/box-lifetime-calculated/box-lifetime-calculated.component.ts ***!
   \*****************************************************************************************************/
 /*! exports provided: BoxLifetime_calculatedComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -169,8 +169,8 @@ var BoxLifetime_calculatedComponent = /** @class */ (function () {
     BoxLifetime_calculatedComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: "[box-lifetime-calculated]",
-            template: __webpack_require__(/*! ./box-lifetime-calculated.component.html */ "./src/app/routes/demo/components/box-lifetime-calculated/box-lifetime-calculated.component.html"),
-            styles: [__webpack_require__(/*! ./box-lifetime-calculated.component.scss */ "./src/app/routes/demo/components/box-lifetime-calculated/box-lifetime-calculated.component.scss")],
+            template: __webpack_require__(/*! ./box-lifetime-calculated.component.html */ "./src/app/routes/test/components/box-lifetime-calculated/box-lifetime-calculated.component.html"),
+            styles: [__webpack_require__(/*! ./box-lifetime-calculated.component.scss */ "./src/app/routes/test/components/box-lifetime-calculated/box-lifetime-calculated.component.scss")],
             encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewEncapsulation"].None
         }),
         __metadata("design:paramtypes", [src_app_services_corrosion_service__WEBPACK_IMPORTED_MODULE_2__["CorrosionService"], _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["DomSanitizer"]])
@@ -182,9 +182,9 @@ var BoxLifetime_calculatedComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/routes/demo/components/box-lifetime-corrected/box-lifetime-corrected.component.html":
+/***/ "./src/app/routes/test/components/box-lifetime-corrected/box-lifetime-corrected.component.html":
 /*!*****************************************************************************************************!*\
-  !*** ./src/app/routes/demo/components/box-lifetime-corrected/box-lifetime-corrected.component.html ***!
+  !*** ./src/app/routes/test/components/box-lifetime-corrected/box-lifetime-corrected.component.html ***!
   \*****************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
@@ -193,9 +193,9 @@ module.exports = "<div class=\"bg_pipeline_img\">\n    <div class=\"bg_pipeline_
 
 /***/ }),
 
-/***/ "./src/app/routes/demo/components/box-lifetime-corrected/box-lifetime-corrected.component.ts":
+/***/ "./src/app/routes/test/components/box-lifetime-corrected/box-lifetime-corrected.component.ts":
 /*!***************************************************************************************************!*\
-  !*** ./src/app/routes/demo/components/box-lifetime-corrected/box-lifetime-corrected.component.ts ***!
+  !*** ./src/app/routes/test/components/box-lifetime-corrected/box-lifetime-corrected.component.ts ***!
   \***************************************************************************************************/
 /*! exports provided: BoxLifetime_correctedComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -254,7 +254,7 @@ var BoxLifetime_correctedComponent = /** @class */ (function () {
     BoxLifetime_correctedComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: "[box-lifetime-corrected]",
-            template: __webpack_require__(/*! ./box-lifetime-corrected.component.html */ "./src/app/routes/demo/components/box-lifetime-corrected/box-lifetime-corrected.component.html"),
+            template: __webpack_require__(/*! ./box-lifetime-corrected.component.html */ "./src/app/routes/test/components/box-lifetime-corrected/box-lifetime-corrected.component.html"),
             encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewEncapsulation"].None
         }),
         __metadata("design:paramtypes", [src_app_services_corrosion_service__WEBPACK_IMPORTED_MODULE_2__["CorrosionService"], _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["DomSanitizer"]])
@@ -266,9 +266,9 @@ var BoxLifetime_correctedComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/routes/demo/components/box-measure/box-measure.component.html":
+/***/ "./src/app/routes/test/components/box-measure/box-measure.component.html":
 /*!*******************************************************************************!*\
-  !*** ./src/app/routes/demo/components/box-measure/box-measure.component.html ***!
+  !*** ./src/app/routes/test/components/box-measure/box-measure.component.html ***!
   \*******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
@@ -277,9 +277,9 @@ module.exports = "<div class=\"bg_pipeline_img\">\n    <div class=\"bg_pipeline_
 
 /***/ }),
 
-/***/ "./src/app/routes/demo/components/box-measure/box-measure.component.scss":
+/***/ "./src/app/routes/test/components/box-measure/box-measure.component.scss":
 /*!*******************************************************************************!*\
-  !*** ./src/app/routes/demo/components/box-measure/box-measure.component.scss ***!
+  !*** ./src/app/routes/test/components/box-measure/box-measure.component.scss ***!
   \*******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
@@ -288,9 +288,9 @@ module.exports = "[box-measure] {\n  position: relative !important;\n  display: 
 
 /***/ }),
 
-/***/ "./src/app/routes/demo/components/box-measure/box-measure.component.ts":
+/***/ "./src/app/routes/test/components/box-measure/box-measure.component.ts":
 /*!*****************************************************************************!*\
-  !*** ./src/app/routes/demo/components/box-measure/box-measure.component.ts ***!
+  !*** ./src/app/routes/test/components/box-measure/box-measure.component.ts ***!
   \*****************************************************************************/
 /*! exports provided: BoxMeasureComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -355,8 +355,8 @@ var BoxMeasureComponent = /** @class */ (function () {
     BoxMeasureComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: "[box-measure]",
-            template: __webpack_require__(/*! ./box-measure.component.html */ "./src/app/routes/demo/components/box-measure/box-measure.component.html"),
-            styles: [__webpack_require__(/*! ./box-measure.component.scss */ "./src/app/routes/demo/components/box-measure/box-measure.component.scss")],
+            template: __webpack_require__(/*! ./box-measure.component.html */ "./src/app/routes/test/components/box-measure/box-measure.component.html"),
+            styles: [__webpack_require__(/*! ./box-measure.component.scss */ "./src/app/routes/test/components/box-measure/box-measure.component.scss")],
             encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewEncapsulation"].None
         }),
         __metadata("design:paramtypes", [src_app_services_corrosion_service__WEBPACK_IMPORTED_MODULE_1__["CorrosionService"]])
@@ -368,9 +368,9 @@ var BoxMeasureComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/routes/demo/components/input-slider/input-slider.component.html":
+/***/ "./src/app/routes/test/components/input-slider/input-slider.component.html":
 /*!*********************************************************************************!*\
-  !*** ./src/app/routes/demo/components/input-slider/input-slider.component.html ***!
+  !*** ./src/app/routes/test/components/input-slider/input-slider.component.html ***!
   \*********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
@@ -379,9 +379,9 @@ module.exports = "\n<div class=\"mymat-slider-label\">\n    <label>\n        <b>
 
 /***/ }),
 
-/***/ "./src/app/routes/demo/components/input-slider/input-slider.component.scss":
+/***/ "./src/app/routes/test/components/input-slider/input-slider.component.scss":
 /*!*********************************************************************************!*\
-  !*** ./src/app/routes/demo/components/input-slider/input-slider.component.scss ***!
+  !*** ./src/app/routes/test/components/input-slider/input-slider.component.scss ***!
   \*********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
@@ -390,9 +390,9 @@ module.exports = "* {\n  outline: none; }\n\n*:focus {\n  outline: none; }\n\n.m
 
 /***/ }),
 
-/***/ "./src/app/routes/demo/components/input-slider/input-slider.component.ts":
+/***/ "./src/app/routes/test/components/input-slider/input-slider.component.ts":
 /*!*******************************************************************************!*\
-  !*** ./src/app/routes/demo/components/input-slider/input-slider.component.ts ***!
+  !*** ./src/app/routes/test/components/input-slider/input-slider.component.ts ***!
   \*******************************************************************************/
 /*! exports provided: InputSliderComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -514,8 +514,8 @@ var InputSliderComponent = /** @class */ (function () {
     InputSliderComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: "input-slider",
-            template: __webpack_require__(/*! ./input-slider.component.html */ "./src/app/routes/demo/components/input-slider/input-slider.component.html"),
-            styles: [__webpack_require__(/*! ./input-slider.component.scss */ "./src/app/routes/demo/components/input-slider/input-slider.component.scss")]
+            template: __webpack_require__(/*! ./input-slider.component.html */ "./src/app/routes/test/components/input-slider/input-slider.component.html"),
+            styles: [__webpack_require__(/*! ./input-slider.component.scss */ "./src/app/routes/test/components/input-slider/input-slider.component.scss")]
         }),
         __metadata("design:paramtypes", [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["DomSanitizer"]])
     ], InputSliderComponent);
@@ -526,38 +526,38 @@ var InputSliderComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/routes/demo/demo.component.html":
+/***/ "./src/app/routes/test/test.component.html":
 /*!*************************************************!*\
-  !*** ./src/app/routes/demo/demo.component.html ***!
+  !*** ./src/app/routes/test/test.component.html ***!
   \*************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"demo_fullscreen\">\n<header>\n    <span>Demo / Proof of concept</span>\n    <img src=\"/assets/images/logo/Beyond_Limits_Logo_WHITE_RGB_700x40.svg\" />\n</header>\n<!-- <h2 id=\"demo_banner\">Demo / Proof of concept</h2> -->\n<article>\n    <h1 style=\"padding: 0 1.66rem;color: #52b9f0;\">Oil Pipeline Corrosion Calculator</h1>\n    <div id=\"pipeline\" [class]=\"'box-components '+statusClass\">\n\n        <span *ngIf=\"statusClass.indexOf('show-results')!==-1\" id=\"scroll-left\" class=\"scroll left\" onclick=\"window.scroll({left: 0,behavior: 'smooth'});\">\n            <span>\n                <b>&laquo;</b>\n                <span> Scroll Left </span>\n            </span>\n        </span>\n        <span *ngIf=\"statusClass.indexOf('show-results')!==-1\" id=\"scroll-right\" class=\"scroll right\" onclick=\"window.scroll({left: 2000,behavior: 'smooth'});\">\n            <span>\n                <span> Scroll Right </span>\n                <b>&raquo;</b>\n            </span>\n        </span>\n\n        <div box-measure></div>\n        <div box-lifetime-calculated></div>\n        <div box-correction *ngIf=\"status.correction_corrosionInhibitor.add\"></div>\n        <div box-lifetime-corrected *ngIf=\"status.correction_corrosionInhibitor.add || status.classList.indexOf('-ok')!=-1\"></div>\n\n    </div>\n</article>\n</div>"
+module.exports = "<div id=\"test_fullscreen\">\n<header>\n    <span>Test / Proof of concept</span>\n    <img src=\"/assets/images/logo/Beyond_Limits_Logo_WHITE_RGB_700x40.svg\" />\n</header>\n<!-- <h2 id=\"test_banner\">Test / Proof of concept</h2> -->\n<article>\n    <h1 style=\"padding: 0 1.66rem;color: #52b9f0;\">Oil Pipeline Corrosion Calculator</h1>\n    <div id=\"pipeline\" [class]=\"'box-components '+statusClass\">\n\n        <span *ngIf=\"statusClass.indexOf('show-results')!==-1\" id=\"scroll-left\" class=\"scroll left\" onclick=\"window.scroll({left: 0,behavior: 'smooth'});\">\n            <span>\n                <b>&laquo;</b>\n                <span> Scroll Left </span>\n            </span>\n        </span>\n        <span *ngIf=\"statusClass.indexOf('show-results')!==-1\" id=\"scroll-right\" class=\"scroll right\" onclick=\"window.scroll({left: 2000,behavior: 'smooth'});\">\n            <span>\n                <span> Scroll Right </span>\n                <b>&raquo;</b>\n            </span>\n        </span>\n\n        <div box-measure></div>\n        <div box-lifetime-calculated></div>\n        <div box-correction *ngIf=\"status.correction_corrosionInhibitor.add\"></div>\n        <div box-lifetime-corrected *ngIf=\"status.correction_corrosionInhibitor.add || status.classList.indexOf('-ok')!=-1\"></div>\n\n    </div>\n</article>\n</div>"
 
 /***/ }),
 
-/***/ "./src/app/routes/demo/demo.component.scss":
+/***/ "./src/app/routes/test/test.component.scss":
 /*!*************************************************!*\
-  !*** ./src/app/routes/demo/demo.component.scss ***!
+  !*** ./src/app/routes/test/test.component.scss ***!
   \*************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "#demo_fullscreen {\n  position: relative;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-direction: column;\n      flex-direction: column;\n  height: 49rem;\n  width: 150vw; }\n  #demo_fullscreen header {\n    width: calc(100vw - 3.33rem);\n    position: fixed;\n    background: #000;\n    border-bottom: solid 2px white;\n    padding: 1.15rem 1.66rem;\n    margin: 0;\n    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.125);\n    height: 13px; }\n  #demo_fullscreen header img {\n      position: absolute;\n      left: 20px;\n      top: 16px;\n      width: 220px;\n      display: block; }\n  #demo_fullscreen header span {\n      position: absolute;\n      right: 1.5rem;\n      top: 1.25rem;\n      padding: 0;\n      margin: -0.15rem;\n      line-height: 100%;\n      font-size: 1.125rem;\n      font-weight: 100;\n      color: #fff; }\n  #demo_fullscreen article {\n    -ms-flex-positive: 1;\n        flex-grow: 1;\n    display: -ms-flexbox;\n    display: flex;\n    -ms-flex-direction: column;\n        flex-direction: column;\n    -ms-flex-pack: center;\n        justify-content: center;\n    margin-top: 50px; }\n  #demo_fullscreen h1 {\n    font-size: 2rem;\n    margin: 20px 0 4px 0; }\n  .progress_indicator_bar {\n  position: relative;\n  margin: 0.5rem 0 1rem;\n  width: 99%;\n  height: 0.5rem;\n  border: solid 1px #bfbfbf;\n  border-left-width: 2px;\n  background: #fff; }\n  .progress_indicator_bar .part {\n    position: absolute;\n    top: -0.25px;\n    left: -0.25px;\n    height: calc(100% + 1px);\n    width: 50%;\n    background: #bfbfbf; }\n  /*\n    scroll\n*/\n  .scroll {\n  opacity: 0;\n  visibility: hidden;\n  transition: opacity 1s;\n  z-index: 101;\n  position: fixed;\n  top: 0.5rem;\n  cursor: pointer; }\n  .scroll.left {\n    left: 1rem;\n    color: #52b9f0; }\n  .scroll.right {\n    right: 1rem;\n    color: #88dd00; }\n  .scroll span {\n    vertical-align: 2.5px; }\n  .scroll span span {\n      font-size: 125%;\n      font-weight: bold; }\n  .scroll span b {\n      font-size: 2rem; }\n  body.scroll-left .scroll.left {\n  opacity: 1;\n  visibility: visible; }\n  body.scroll-right .scroll.right {\n  opacity: 1;\n  visibility: visible; }\n  /*\n    background graphics\n*/\n  .bg_pipeline_img {\n  position: relative;\n  left: -5rem;\n  background-size: 90% 100%;\n  background-repeat: no-repeat;\n  background-position: center;\n  height: 70px;\n  width: calc(100% + 6.14rem);\n  margin-bottom: 1.7rem;\n  z-index: 100; }\n  .bg_pipeline_img .bg_pipeline_caption {\n    position: absolute;\n    bottom: 35%;\n    color: #fff;\n    width: calc(100% + 4.75rem);\n    text-align: center;\n    font-weight: bold;\n    font-size: 19px; }\n  .bg_pipeline_img .bg_pipeline_caption.left {\n      color: #fff;\n      width: 13%; }\n  .bg_pipeline_img .bg_pipeline_left {\n    position: absolute;\n    left: 5rem;\n    height: 100%;\n    width: 50%;\n    background-size: auto 100%;\n    background-repeat: no-repeat;\n    background-position: left center; }\n  .bg_pipeline_img .bg_pipeline_left img {\n      position: relative;\n      height: 100%; }\n  .bg_pipeline_img .bg_pipeline_right {\n    position: absolute;\n    right: 0;\n    height: 100%;\n    width: 50%;\n    background-size: auto 100%;\n    background-repeat: no-repeat;\n    background-position: right center; }\n  /*\n    boxes\n*/\n  #pipeline.box-components {\n  /*\n        auto-scale (in index.html) based on ratio of content width / page width\n    */\n  width: 1280px;\n  -webkit-transform-origin: 0 0;\n      -ms-transform-origin: 0 0;\n          transform-origin: 0 0;\n  /*\n        layout\n    */\n  vertical-align: top;\n  display: -ms-flexbox;\n  display: flex;\n  position: relative;\n  margin: 24px 24px 0; }\n  #pipeline.box-components > div {\n    padding: 0 28px 0 0.6rem;\n    width: 25vw; }\n  #pipeline.box-components > div .box {\n      position: relative;\n      z-index: 99; }\n  #pipeline.box-components > div .box .heading::before {\n        content: \" \";\n        position: absolute;\n        top: -4rem;\n        left: 20px;\n        width: 2px;\n        height: 4.25rem;\n        background: inherit;\n        z-index: 99; }\n  #pipeline.box-components > div .box.next {\n      z-index: 90; }\n  .box-components {\n  /*\n        style\n    */ }\n  .box-components .box {\n    position: relative;\n    top: -0.1px;\n    display: -ms-flexbox;\n    display: flex;\n    -ms-flex-direction: column;\n        flex-direction: column;\n    background: #fff;\n    border: solid 2px #bfbfbf;\n    min-height: 290px;\n    width: 99%;\n    min-width: 320px;\n    max-width: 480px;\n    margin-bottom: 24px;\n    box-shadow: 2px 2px 0 0 #ccc;\n    border-radius: 2px; }\n  .box-components .box .heading {\n      background: #bfbfbf;\n      color: #fff; }\n  .box-components .box .heading > * {\n        margin: 0;\n        padding: 0.66rem 0.85rem;\n        line-height: 1; }\n  .box-components .box .body {\n      padding: 1.5rem 1.1rem;\n      color: #999999; }\n  .box-components .box h2 {\n      margin: 0;\n      padding: 0.5rem 0;\n      line-height: 100%; }\n  .box-components .box h3 {\n      font-weight: normal; }\n  .box-components .box h3 b {\n        font-weight: bold; }\n  .box-components .box p {\n      margin: 1.5rem 0.1rem; }\n  .box-components .box .heading {\n      margin: -0.5px -0.5px;\n      width: calc(100% + 1px); }\n  .box-components .box .body {\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n      position: relative; }\n  .box-components .box .bottom {\n      position: relative; }\n"
+module.exports = "#test_fullscreen {\n  position: relative;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-direction: column;\n      flex-direction: column;\n  height: 49rem;\n  width: 150vw; }\n  #test_fullscreen header {\n    width: calc(100vw - 3.33rem);\n    position: fixed;\n    background: #000;\n    border-bottom: solid 2px white;\n    padding: 1.15rem 1.66rem;\n    margin: 0;\n    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.125);\n    height: 13px; }\n  #test_fullscreen header img {\n      position: absolute;\n      left: 20px;\n      top: 16px;\n      width: 220px;\n      display: block; }\n  #test_fullscreen header span {\n      position: absolute;\n      right: 1.5rem;\n      top: 1.25rem;\n      padding: 0;\n      margin: -0.15rem;\n      line-height: 100%;\n      font-size: 1.125rem;\n      font-weight: 100;\n      color: #fff; }\n  #test_fullscreen article {\n    -ms-flex-positive: 1;\n        flex-grow: 1;\n    display: -ms-flexbox;\n    display: flex;\n    -ms-flex-direction: column;\n        flex-direction: column;\n    -ms-flex-pack: center;\n        justify-content: center;\n    margin-top: 50px; }\n  #test_fullscreen h1 {\n    font-size: 2rem;\n    margin: 20px 0 4px 0; }\n  .progress_indicator_bar {\n  position: relative;\n  margin: 0.5rem 0 1rem;\n  width: 99%;\n  height: 0.5rem;\n  border: solid 1px #bfbfbf;\n  border-left-width: 2px;\n  background: #fff; }\n  .progress_indicator_bar .part {\n    position: absolute;\n    top: -0.25px;\n    left: -0.25px;\n    height: calc(100% + 1px);\n    width: 50%;\n    background: #bfbfbf; }\n  /*\n    scroll\n*/\n  .scroll {\n  opacity: 0;\n  visibility: hidden;\n  transition: opacity 1s;\n  z-index: 101;\n  position: fixed;\n  top: 0.5rem;\n  cursor: pointer; }\n  .scroll.left {\n    left: 1rem;\n    color: #52b9f0; }\n  .scroll.right {\n    right: 1rem;\n    color: #88dd00; }\n  .scroll span {\n    vertical-align: 2.5px; }\n  .scroll span span {\n      font-size: 125%;\n      font-weight: bold; }\n  .scroll span b {\n      font-size: 2rem; }\n  body.scroll-left .scroll.left {\n  opacity: 1;\n  visibility: visible; }\n  body.scroll-right .scroll.right {\n  opacity: 1;\n  visibility: visible; }\n  /*\n    background graphics\n*/\n  .bg_pipeline_img {\n  position: relative;\n  left: -5rem;\n  background-size: 90% 100%;\n  background-repeat: no-repeat;\n  background-position: center;\n  height: 70px;\n  width: calc(100% + 6.14rem);\n  margin-bottom: 1.7rem;\n  z-index: 100; }\n  .bg_pipeline_img .bg_pipeline_caption {\n    position: absolute;\n    bottom: 35%;\n    color: #fff;\n    width: calc(100% + 4.75rem);\n    text-align: center;\n    font-weight: bold;\n    font-size: 19px; }\n  .bg_pipeline_img .bg_pipeline_caption.left {\n      color: #fff;\n      width: 13%; }\n  .bg_pipeline_img .bg_pipeline_left {\n    position: absolute;\n    left: 5rem;\n    height: 100%;\n    width: 50%;\n    background-size: auto 100%;\n    background-repeat: no-repeat;\n    background-position: left center; }\n  .bg_pipeline_img .bg_pipeline_left img {\n      position: relative;\n      height: 100%; }\n  .bg_pipeline_img .bg_pipeline_right {\n    position: absolute;\n    right: 0;\n    height: 100%;\n    width: 50%;\n    background-size: auto 100%;\n    background-repeat: no-repeat;\n    background-position: right center; }\n  /*\n    boxes\n*/\n  #pipeline.box-components {\n  /*\n        auto-scale (in index.html) based on ratio of content width / page width\n    */\n  width: 1280px;\n  -webkit-transform-origin: 0 0;\n      -ms-transform-origin: 0 0;\n          transform-origin: 0 0;\n  /*\n        layout\n    */\n  vertical-align: top;\n  display: -ms-flexbox;\n  display: flex;\n  position: relative;\n  margin: 24px 24px 0; }\n  #pipeline.box-components > div {\n    padding: 0 28px 0 0.6rem;\n    width: 25vw; }\n  #pipeline.box-components > div .box {\n      position: relative;\n      z-index: 99; }\n  #pipeline.box-components > div .box .heading::before {\n        content: \" \";\n        position: absolute;\n        top: -4rem;\n        left: 20px;\n        width: 2px;\n        height: 4.25rem;\n        background: inherit;\n        z-index: 99; }\n  #pipeline.box-components > div .box.next {\n      z-index: 90; }\n  .box-components {\n  /*\n        style\n    */ }\n  .box-components .box {\n    position: relative;\n    top: -0.1px;\n    display: -ms-flexbox;\n    display: flex;\n    -ms-flex-direction: column;\n        flex-direction: column;\n    background: #fff;\n    border: solid 2px #bfbfbf;\n    min-height: 290px;\n    width: 99%;\n    min-width: 320px;\n    max-width: 480px;\n    margin-bottom: 24px;\n    box-shadow: 2px 2px 0 0 #ccc;\n    border-radius: 2px; }\n  .box-components .box .heading {\n      background: #bfbfbf;\n      color: #fff; }\n  .box-components .box .heading > * {\n        margin: 0;\n        padding: 0.66rem 0.85rem;\n        line-height: 1; }\n  .box-components .box .body {\n      padding: 1.5rem 1.1rem;\n      color: #999999; }\n  .box-components .box h2 {\n      margin: 0;\n      padding: 0.5rem 0;\n      line-height: 100%; }\n  .box-components .box h3 {\n      font-weight: normal; }\n  .box-components .box h3 b {\n        font-weight: bold; }\n  .box-components .box p {\n      margin: 1.5rem 0.1rem; }\n  .box-components .box .heading {\n      margin: -0.5px -0.5px;\n      width: calc(100% + 1px); }\n  .box-components .box .body {\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n      position: relative; }\n  .box-components .box .bottom {\n      position: relative; }\n"
 
 /***/ }),
 
-/***/ "./src/app/routes/demo/demo.component.ts":
+/***/ "./src/app/routes/test/test.component.ts":
 /*!***********************************************!*\
-  !*** ./src/app/routes/demo/demo.component.ts ***!
+  !*** ./src/app/routes/test/test.component.ts ***!
   \***********************************************/
-/*! exports provided: DemoComponent */
+/*! exports provided: TestComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DemoComponent", function() { return DemoComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TestComponent", function() { return TestComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var src_app_services_corrosion_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/services/corrosion.service */ "./src/app/services/corrosion.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
@@ -571,8 +571,8 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 };
 
 
-var DemoComponent = /** @class */ (function () {
-    function DemoComponent(corrosionService) {
+var TestComponent = /** @class */ (function () {
+    function TestComponent(corrosionService) {
         this.corrosionService = corrosionService;
         /*
         data (model)
@@ -595,7 +595,7 @@ var DemoComponent = /** @class */ (function () {
     /*
     component ready (DOM is not ready)
   */
-    DemoComponent.prototype.ngOnInit = function () {
+    TestComponent.prototype.ngOnInit = function () {
         var _this = this;
         setTimeout(function () {
             window.scroll({
@@ -618,41 +618,41 @@ var DemoComponent = /** @class */ (function () {
             // console.log("statusUpdated", this.status);
         });
     };
-    DemoComponent = __decorate([
+    TestComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: "demo-component",
-            template: __webpack_require__(/*! ./demo.component.html */ "./src/app/routes/demo/demo.component.html"),
-            styles: [__webpack_require__(/*! ./demo.component.scss */ "./src/app/routes/demo/demo.component.scss")],
+            selector: "test-component",
+            template: __webpack_require__(/*! ./test.component.html */ "./src/app/routes/test/test.component.html"),
+            styles: [__webpack_require__(/*! ./test.component.scss */ "./src/app/routes/test/test.component.scss")],
             encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewEncapsulation"].None
         }),
         __metadata("design:paramtypes", [src_app_services_corrosion_service__WEBPACK_IMPORTED_MODULE_1__["CorrosionService"]])
-    ], DemoComponent);
-    return DemoComponent;
+    ], TestComponent);
+    return TestComponent;
 }());
 
 
 
 /***/ }),
 
-/***/ "./src/app/routes/demo/demo.module.ts":
+/***/ "./src/app/routes/test/test.module.ts":
 /*!********************************************!*\
-  !*** ./src/app/routes/demo/demo.module.ts ***!
+  !*** ./src/app/routes/test/test.module.ts ***!
   \********************************************/
-/*! exports provided: DemoModule */
+/*! exports provided: TestModule */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DemoModule", function() { return DemoModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TestModule", function() { return TestModule; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var _demo_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./demo.component */ "./src/app/routes/demo/demo.component.ts");
-/* harmony import */ var _components_input_slider_input_slider_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/input-slider/input-slider.component */ "./src/app/routes/demo/components/input-slider/input-slider.component.ts");
-/* harmony import */ var _components_box_measure_box_measure_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/box-measure/box-measure.component */ "./src/app/routes/demo/components/box-measure/box-measure.component.ts");
-/* harmony import */ var _components_box_correction_box_correction_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/box-correction/box-correction.component */ "./src/app/routes/demo/components/box-correction/box-correction.component.ts");
-/* harmony import */ var _components_box_lifetime_calculated_box_lifetime_calculated_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/box-lifetime-calculated/box-lifetime-calculated.component */ "./src/app/routes/demo/components/box-lifetime-calculated/box-lifetime-calculated.component.ts");
-/* harmony import */ var _components_box_lifetime_corrected_box_lifetime_corrected_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/box-lifetime-corrected/box-lifetime-corrected.component */ "./src/app/routes/demo/components/box-lifetime-corrected/box-lifetime-corrected.component.ts");
+/* harmony import */ var _test_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./test.component */ "./src/app/routes/test/test.component.ts");
+/* harmony import */ var _components_input_slider_input_slider_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/input-slider/input-slider.component */ "./src/app/routes/test/components/input-slider/input-slider.component.ts");
+/* harmony import */ var _components_box_measure_box_measure_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/box-measure/box-measure.component */ "./src/app/routes/test/components/box-measure/box-measure.component.ts");
+/* harmony import */ var _components_box_correction_box_correction_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/box-correction/box-correction.component */ "./src/app/routes/test/components/box-correction/box-correction.component.ts");
+/* harmony import */ var _components_box_lifetime_calculated_box_lifetime_calculated_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/box-lifetime-calculated/box-lifetime-calculated.component */ "./src/app/routes/test/components/box-lifetime-calculated/box-lifetime-calculated.component.ts");
+/* harmony import */ var _components_box_lifetime_corrected_box_lifetime_corrected_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/box-lifetime-corrected/box-lifetime-corrected.component */ "./src/app/routes/test/components/box-lifetime-corrected/box-lifetime-corrected.component.ts");
 /* harmony import */ var _angular_material_slider__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/material/slider */ "./node_modules/@angular/material/esm5/slider.es5.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -670,10 +670,10 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
-var DemoModule = /** @class */ (function () {
-    function DemoModule() {
+var TestModule = /** @class */ (function () {
+    function TestModule() {
     }
-    DemoModule = __decorate([
+    TestModule = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
             imports: [
                 _angular_material_slider__WEBPACK_IMPORTED_MODULE_9__["MatSliderModule"],
@@ -681,16 +681,20 @@ var DemoModule = /** @class */ (function () {
                 _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forChild([
                     {
                         path: "",
-                        component: _demo_component__WEBPACK_IMPORTED_MODULE_3__["DemoComponent"]
+                        component: _test_component__WEBPACK_IMPORTED_MODULE_3__["TestComponent"]
+                    },
+                    {
+                        path: "secondTest",
+                        component: _test_component__WEBPACK_IMPORTED_MODULE_3__["TestComponent"]
                     }
                 ])
             ],
             exports: [],
-            declarations: [_demo_component__WEBPACK_IMPORTED_MODULE_3__["DemoComponent"], _components_input_slider_input_slider_component__WEBPACK_IMPORTED_MODULE_4__["InputSliderComponent"], _components_box_measure_box_measure_component__WEBPACK_IMPORTED_MODULE_5__["BoxMeasureComponent"], _components_box_correction_box_correction_component__WEBPACK_IMPORTED_MODULE_6__["BoxCorrectionComponent"], _components_box_lifetime_calculated_box_lifetime_calculated_component__WEBPACK_IMPORTED_MODULE_7__["BoxLifetime_calculatedComponent"], _components_box_lifetime_corrected_box_lifetime_corrected_component__WEBPACK_IMPORTED_MODULE_8__["BoxLifetime_correctedComponent"]],
+            declarations: [_test_component__WEBPACK_IMPORTED_MODULE_3__["TestComponent"], _components_input_slider_input_slider_component__WEBPACK_IMPORTED_MODULE_4__["InputSliderComponent"], _components_box_measure_box_measure_component__WEBPACK_IMPORTED_MODULE_5__["BoxMeasureComponent"], _components_box_correction_box_correction_component__WEBPACK_IMPORTED_MODULE_6__["BoxCorrectionComponent"], _components_box_lifetime_calculated_box_lifetime_calculated_component__WEBPACK_IMPORTED_MODULE_7__["BoxLifetime_calculatedComponent"], _components_box_lifetime_corrected_box_lifetime_corrected_component__WEBPACK_IMPORTED_MODULE_8__["BoxLifetime_correctedComponent"]],
             providers: []
         })
-    ], DemoModule);
-    return DemoModule;
+    ], TestModule);
+    return TestModule;
 }());
 
 
@@ -698,4 +702,4 @@ var DemoModule = /** @class */ (function () {
 /***/ })
 
 }]);
-//# sourceMappingURL=routes-demo-demo-module.js.map
+//# sourceMappingURL=routes-test-test-module.js.map

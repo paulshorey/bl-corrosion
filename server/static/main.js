@@ -10,7 +10,13 @@
 var map = {
 	"./routes/demo/demo.module": [
 		"./src/app/routes/demo/demo.module.ts",
+		"routes-demo-demo-module~routes-test-test-module",
 		"routes-demo-demo-module"
+	],
+	"./routes/test/test.module": [
+		"./src/app/routes/test/test.module.ts",
+		"routes-demo-demo-module~routes-test-test-module",
+		"routes-test-test-module"
 	]
 };
 function webpackAsyncContext(req) {
@@ -22,7 +28,7 @@ function webpackAsyncContext(req) {
 			throw e;
 		});
 	}
-	return __webpack_require__.e(ids[1]).then(function() {
+	return Promise.all(ids.slice(1).map(__webpack_require__.e)).then(function() {
 		var module = __webpack_require__(ids[0]);
 		return module;
 	});
@@ -135,6 +141,10 @@ var AppModule = /** @class */ (function () {
                     {
                         path: "",
                         loadChildren: "./routes/demo/demo.module#DemoModule"
+                    },
+                    {
+                        path: "test",
+                        loadChildren: "./routes/test/test.module#TestModule"
                     }
                 ])
             ],

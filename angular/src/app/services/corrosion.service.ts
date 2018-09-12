@@ -4,8 +4,8 @@ import { environment } from "../../environments/environment";
 	const
 */
 const USE_REMOTE_SERVER = !environment.production;
-// const BEAPIURL = "http://" + (USE_REMOTE_SERVER ? "10.1.111.85" : "localhost") + ":5000/calculate";
-const BEAPIURL = "http://localhost:5000/calculate";
+const BEAPIURL = "http://" + (USE_REMOTE_SERVER ? "10.1.111.193" : "localhost") + ":5000/calculate";
+// const BEAPIURL = "http://localhost:5000/calculate";
 /*
 	lib
 */
