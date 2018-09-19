@@ -62,8 +62,8 @@ var __generator = (undefined && undefined.__generator) || function (thisArg, bod
     const
 */
 var USE_REMOTE_SERVER = !_environments_environment__WEBPACK_IMPORTED_MODULE_1__["environment"].production;
-var BEAPIURL = "http://" + (USE_REMOTE_SERVER ? "10.1.111.193" : "localhost") + ":5000/calculate";
-// const BEAPIURL = "http://localhost:5000/calculate";
+// const BEAPIURL = "http://" + (USE_REMOTE_SERVER ? "10.1.111.193" : "localhost") + ":5000/calculate";
+var BEAPIURL = "http://localhost:5000/calculate";
 /*
     lib
 */
