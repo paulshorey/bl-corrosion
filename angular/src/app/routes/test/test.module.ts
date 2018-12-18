@@ -29,4 +29,4 @@ import { MatSliderModule } from "@angular/material/slider";
     declarations: [TestComponent, InputSliderComponent, BoxMeasureComponent, BoxCorrectionComponent, BoxLifetime_calculatedComponent, BoxLifetime_correctedComponent],
     providers: []
 })
-export class TestModule {}
+export default class TestModule {}

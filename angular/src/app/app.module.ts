@@ -5,6 +5,8 @@ import { BrowserModule, HAMMER_GESTURE_CONFIG } from "@angular/platform-browser"
 import { GestureConfig } from "@angular/material";
 
 import { AppComponent } from "./app.component";
+import TestModule from "./routes/test/test.module";
+import DemoModule from "./routes/demo/demo.module";
 
 // import "src/app/lib/Object.prototype.watch";
 
@@ -16,11 +18,11 @@ import { AppComponent } from "./app.component";
     RouterModule.forRoot([
       {
         path: "",
-        loadChildren: "./routes/demo/demo.module#DemoModule"
+        loadChildren: () => DemoModule
       },
       {
         path: "test",
-        loadChildren: "./routes/test/test.module#TestModule"
+        loadChildren: () => TestModule
       }
     ])
   ],
